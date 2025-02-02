@@ -1,0 +1,92 @@
+PC4.2 - Testing and Debugging 
+
+Title = works
+
+Main menu
+
+    // validators for main menu
+    if input is not 1-3 vaildator = works
+    if input is not int data type = works
+
+    if input 1 or Patch notes and Developer notes = works
+
+        if input 'y' to go back to main menu = works
+
+        // validator for Patch notes and Developer notes
+        back to main menu incorrect input vaildator = works
+    
+    if input 2 or Calculator = works
+
+        pythagorean formula chart = works
+
+        calulator mode selection menu = works
+
+            // validators for mode selection menu
+            if input is not 1-5 validator = works
+            if input is not int data type validator = works
+
+            if input 4 or back to main menu = works
+
+            if input 5 or close program = works
+
+            if input 1 or side A = works
+    
+                side B input = works
+                side C input = works
+                Side A output = works
+
+                // validators for side A
+                if side B input is not int validator = none - intentional 
+                if side C input is not int validator = none - intentional 
+                if side B > side C validator = works
+                if side B == 0 vaildator = works
+                if side C == 0 vaildator = works
+
+                // while loop after usage
+                pop-up after usage = works
+                restart side A calculator= works
+                main menu from side A = works
+                close program from side A = works
+            
+            if input 2 or side B = works
+
+                side A input = works
+                side C input = works
+                side B output = works
+
+                // validators for side B
+                if side A input is not int validator = none - intentional 
+                if side C input is not int validator = none - intentional 
+                if side A > side C validator = works
+                if side A == 0 vaildator = works
+                if side C == 0 vaildator = works
+
+                // while loop after usage
+                pop-up after usage = works
+                restart side B calculator = works
+                main menu from side A = works
+                close program from side A = works
+
+            if input 3 or side C
+
+                side A input = works
+                side B input = works
+                Side C output = works
+
+                // validators for side C
+                if side A input is not int validator = none - intentional 
+                if side B input is not int validator = none - intentional 
+                if side A == 0 vaildator = works
+                if side B == 0 vaildator = works
+
+                // while loop after usage
+                pop-up after usage = works
+                restart side C calculator = works
+                main menu from side C = works
+                close program from side A = works
+        
+    reset validators = works
+
+    if input 3 or Exit funtion = works
+
+            

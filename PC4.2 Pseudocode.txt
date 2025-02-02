@@ -1,0 +1,316 @@
+
+ This program is a Pythagorean Theorem Calculator, It has 3 modes which corresponds to each side of a right triangle.
+Each mode will ask for the value of the given sides and the it will solve for the missing side. 
+
+
+START
+
+PRINT "[ASCII art for the title]"
+
+DECLARE VARIABLE char reset
+
+MAIN {
+
+    DO {
+
+        DECLARE VARIABLE int menuOptions
+
+        PRINT "Pythagorean Theorem Calculator v4.2"
+
+        PRINT "Patch notes - input '1' to open"
+            "Calculator - input '2' to open"
+            "Close program - input '3'" 
+        PRINT "Type number here: "
+
+        IF the value of INPUT VARIABLE menuOptions is not the correct data type or it fails {
+            
+            CLEAR the state of the input thus removing the error flag
+            IGNORE up to 123 characters until a new line
+        }
+        
+        if the value of VARIABLE menuOptions is more than 3 OR less than 1 {
+
+            PRINT "invalid input, please select correct input "
+            VARIABLE reset value will be equal to 'y' // reset the DO-WHILE loop which the program runs on
+        }
+
+            SWITCH depending on the value of VARIABLE menuOptions { 
+            
+            CASE if value of VARIABLE menuOptions is 1 // Patch notes and Developer notes
+                
+                PRINT "[Border line]"
+                PRINT "[Patch notes]"
+                PRINT "[Border line]"
+                PRINT "[Developer note]"
+
+                PRINT "type 'y' to go back to main menu "
+                INPUT VARIABLE reset
+
+                WHILE value of VARIABLE reset is not equal to 'y' {
+
+                    PRINT "invalid input, type 'y' to go back to main menu "
+                    INPUT VARIABLE reset
+                }
+            BREAK
+            CASE if value of VARIABLE menuOptions is 2 // The Calculator
+
+                PRINT "Formula: "
+                        "a^2 + b^2 = c^2" // C side or hypotenuse formula
+                        "c^2 - b^2 = a^2" // A side formula
+                        "c^2 - a^2 = b^2" // B side formula
+
+                DECLARE VARIABLE int modeOptions
+
+                PRINT "Which side of a triangle are you looking for? "
+                        "Type '1' for A side, '2' for B side, or '3' for C side or the hypotenuse. Type '4' to go back to main menu or '5' to exit program.(1-5 only)"
+                PRINT "Type number here: "
+
+                WHILE the value of INPUT VARIABLE modeOptions is not the correct data type or it fails {
+        
+                    CLEAR the state of the input thus removing the error flag
+                    IGNORE up to 123 characters until a new line
+
+                    PRINT "invalid mode, please try again"
+                    PRINT "[Border line]"
+                    PRINT "Which side of a triangle are you looking for?"
+                            "Type '1' for A side, '2' for B side, or '3' for C side or the hypotenuse. Type '4' to go back to main menu or '5' to exit program. (1-5 only)"
+                    PRINT "Type number here: "
+                }
+
+                WHILE the value of VARIABLE modeOptions is more than 5 OR less than 1 {
+
+                    CLEAR the state of the input thus removing the error flag
+                    IGNORE up to 123 characters until a new line
+
+                    PRINT "invalid mode, please try again"
+                    PRINT "[Border line]"
+                    PRINT "Which side of a triangle are you looking for?"
+                            "Type '1' for A side, '2' for B side, or '3' for C side or the hypotenuse. Type '4' to go back to main menu or '5' to exit program. (1-5 only)"
+                    PRINT "Type number here: "
+                    INPUT VARIABLE modeOptions
+                }
+
+                DECLARE VARIABLE double sideA
+                DECLARE VARIABLE double sideB
+                DECLARE VARIABLE double sideC
+
+                SWITCH depending on the value of VARIABLE modeOptions {
+
+                CASE if value of VARIABLE modeOptions is 1 // Side A
+
+                    PRINT "Side B value: "
+                    INPUT VARIABLE sideB
+
+                    PRINT "Side C value: "
+                    INPUT VARIABLE sideC
+
+                    IF VARIABLE sideB is less than or equal to 0 OR VARIABLE sideC is less than or equal to 0 {
+
+                        PRINT "ERROR: A side of a triangle cannot be less than or equal to zero."
+                    } 
+                    ELSE {
+
+                        VARIABLE sideB is VARIABLE sideB to the power of 2
+                        VARIABLE sideC is VARIABLE sideC to the power of 2
+                        VARIABLE sideA is Square root of VARIABLE sideC minus VARIABLE sideB
+
+                    IF VARIABLE SideA is not a number OR equal to 0 {
+
+                        PRINT "Side B must be less than Side C or the Hypotenuse."
+                    }
+                    ELSE {
+
+                        PRINT "Side A value: " + VARIABLE SideA
+                        }
+                    }
+
+                    PRINT "type 'y' to go back to main menu, 'c' to close program, or 'r' to restart calculator"
+                    INPUT VARIABLE reset
+
+                        WHILE the value of VARIABLE reset is equal to 'r' {
+                        
+                        PRINT "[Border line]"
+                        PRINT "Side B value: "
+                        INPUT VARIABLE sideB
+
+                        PRINT "Side C value: "
+                        INPUT VARIABLE sideC
+
+                        IF VARIABLE sideB is less than or equal to 0 OR VARIABLE sideC is less than or equal to 0 {
+
+                            PRINT "ERROR: A side of a triangle cannot be less than or equal to zero."
+                        } 
+                        ELSE {
+
+                        VARIABLE sideB is VARIABLE sideB to the power of 2
+                        VARIABLE sideC is VARIABLE sideC to the power of 2
+                        VARIABLE sideA is Square root of VARIABLE sideC minus VARIABLE sideB
+
+                        IF VARIABLE SideA is not a number OR equal to 0 {
+
+                            PRINT "Side B must be less than Side C or the Hypotenuse."
+                        }
+                        ELSE {
+
+                            PRINT "Side A value: " + VARIABLE SideA
+                            }
+                        }
+
+                        PRINT "type 'y' to go back to main menu, 'c' to close program, or 'r' to restart calculator"
+                        INPUT VARIABLE reset
+                        }
+                BREAK
+                CASE if value of VARIABLE modeOptions is 2 // Side B
+
+                    PRINT "Side A value: "
+                    INPUT VARIABLE sideA
+
+                    PRINT "Side C value: "
+                    INPUT VARIABLE sideC
+
+                    IF VARIABLE sideA is less than or equal to 0 OR VARIABLE sideC is less than or equal to 0 {
+
+                        PRINT "ERROR: A side of a triangle cannot be less than or equal to zero."
+                    } 
+                    ELSE {
+
+                        VARIABLE sideA is VARIABLE sideA to the power of 2
+                        VARIABLE sideC is VARIABLE sideC to the power of 2
+                        VARIABLE sideB is Square root of VARIABLE sideC minus VARIABLE sideA
+
+                    IF VARIABLE SideB is not a number OR equal to 0 {
+
+                        PRINT "Side A must be less than Side C or the Hypotenuse."
+                    }
+                    ELSE {
+
+                        PRINT "Side B value: " + VARIABLE SideB
+                        }
+                    }
+
+                    PRINT "type 'y' to go back to main menu, 'c' to close program, or 'r' to restart calculator"
+                    INPUT VARIABLE reset
+
+                        WHILE the value of VARIABLE reset is equal to 'r' {
+                        
+                        PRINT "[Border line]"
+                        PRINT "Side A value: "
+                        INPUT VARIABLE sideA
+
+                        PRINT "Side C value: "
+                        INPUT VARIABLE sideC
+
+                        IF VARIABLE sideA is less than or equal to 0 OR VARIABLE sideC is less than or equal to 0 {
+
+                            PRINT "ERROR: A side of a triangle cannot be less than or equal to zero."
+                        } 
+                        ELSE {
+
+                        VARIABLE sideA is VARIABLE sideA to the power of 2
+                        VARIABLE sideC is VARIABLE sideC to the power of 2
+                        VARIABLE sideB is Square root of VARIABLE sideC minus VARIABLE sideA
+
+                        IF VARIABLE SideB is not a number OR equal to 0 {
+
+                            PRINT "Side A must be less than Side C or the Hypotenuse."
+                        }
+                        ELSE {
+
+                            PRINT "Side B value: " + VARIABLE SideB
+                            }
+                        }
+
+                        PRINT "type 'y' to go back to main menu, 'c' to close program, or 'r' to restart calculator"
+                        INPUT VARIABLE reset
+                        }
+                BREAK
+                CASE if value of VARIABLE modeOptions is 3 // Side C or hypotenuse
+
+                    PRINT "Side A value: "
+                    INPUT VARIABLE sideA
+
+                    PRINT "Side B value: "
+                    INPUT VARIABLE sideB
+
+                    IF VARIABLE sideA is less than or equal to 0 OR VARIABLE sideC is less than or equal to 0 {
+
+                        PRINT "ERROR: A side of a triangle cannot be less than or equal to zero."
+                    } 
+                    ELSE {
+
+                    VARIABLE sideA is VARIABLE sideA to the power of 2
+                    VARIABLE sideB is VARIABLE sideB to the power of 2
+                    VARIABLE sideC is Square root of VARIABLE sideA plus VARIABLE sideB
+
+                    PRINT "Side C value: " +  VARIABLE sideC
+                    }
+
+                    PRINT "type 'y' to go back to main menu, 'c' to close program, or 'r' to restart calculator"
+                    INPUT VARIABLE reset
+
+                        WHILE the value of VARIABLE reset is equal to 'r' {
+                        
+                        PRINT "[Border line]"
+                        PRINT "Side A value: "
+                        INPUT VARIABLE sideA
+
+                        PRINT "Side B value: "
+                        INPUT VARIABLE sideB
+
+                        IF VARIABLE sideA is less than or equal to 0 OR VARIABLE sideC is less than or equal to 0 {
+
+                        PRINT "ERROR: A side of a triangle cannot be less than or equal to zero."
+                        } 
+                        ELSE {
+
+                        VARIABLE sideA is VARIABLE sideA to the power of 2
+                        VARIABLE sideB is VARIABLE sideB to the power of 2
+                        VARIABLE sideC is Square root of VARIABLE sideA plus VARIABLE sideB
+
+                        PRINT "Side C value: " +  VARIABLE sideC
+                        }
+
+                        PRINT "type 'y' to go back to main menu, 'c' to close program, or 'r' to restart calculator"
+                        INPUT VARIABLE reset
+                        }
+                BREAK
+                CASE if value of VARIABLE modeOptions is 4 // return to main menu from mode menu
+
+                    value of VARIABLE reset is 'y'
+
+                BREAK
+                CASE if value of VARIABLE modeOptions is 5 // close program from mode menu
+            
+                    value of VARIABLE reset is 'c'
+
+                BREAK
+                }
+            
+            BREAK
+            CASE if value of VARIABLE menuOptions is 3
+
+                EXIT program
+
+            BREAK
+            }
+
+            PRINT "[Border line]"
+        
+        IF VARIABLE reset is equal to 'c' {
+        
+            EXIT program
+        } 
+        ELSE {
+
+            WHILE VARIABLE reset is not equal to 'y' OR VARIABLE reset is not equal to 'c'
+                
+                PRINT "invalid input, type 'y' to go back to main menu or 'c' to close program, restart option no longer available, must go back to main menu"
+                INPUT VARIABLE reset
+        }
+
+    } WHILE value of VARIABLE reset is equal to 'y' // resets DO-WHILE loop when condition is met
+
+RETRUN 0
+}
+
+END

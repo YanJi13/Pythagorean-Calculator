@@ -1,0 +1,38 @@
+Date : 2023-11-02 23:31:59
+Directory : d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator
+Total : 11 files,  1581 codes, 192 comments, 470 blanks, all 2243 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         11 |      1,581 |        192 |        470 |      2,243 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                            |         11 |      1,581 |        192 |        470 |      2,243 |
+| . (Files)                                                                                                                    |          1 |        284 |         36 |         70 |        390 |
+| Version 1 - 3.3 source codes                                                                                                 |          6 |        520 |         55 |        194 |        769 |
+| Version 3.4 - 4.1 source codes & exe                                                                                         |          4 |        777 |        101 |        206 |      1,084 |
++------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                                     | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\PC4.2.cpp                                      | C++      |        284 |         36 |         70 |        390 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 1 - 3.3 source codes\PC1.0.cpp         | C++      |         48 |          4 |         24 |         76 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 1 - 3.3 source codes\PC2.0.cpp         | C++      |         61 |          5 |         27 |         93 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 1 - 3.3 source codes\PC3.0.cpp         | C++      |         87 |         10 |         36 |        133 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 1 - 3.3 source codes\PC3.1.cpp         | C++      |         94 |          7 |         37 |        138 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 1 - 3.3 source codes\PC3.2.cpp         | C++      |        113 |         14 |         35 |        162 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 1 - 3.3 source codes\PC3.3.cpp         | C++      |        117 |         15 |         35 |        167 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 3.4 - 4.1 source codes & exe\PC3.4.cpp | C++      |        126 |         17 |         37 |        180 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 3.4 - 4.1 source codes & exe\PC3.5.cpp | C++      |        130 |         17 |         38 |        185 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 3.4 - 4.1 source codes & exe\PC4.0.cpp | C++      |        252 |         33 |         64 |        349 |
+| d:\01 School\1st Year College\1st term\CS 101\Module 3\Pythagorean Calculator\Version 3.4 - 4.1 source codes & exe\PC4.1.cpp | C++      |        269 |         34 |         67 |        370 |
+| Total                                                                                                                        |          |      1,581 |        192 |        470 |      2,243 |
++------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
